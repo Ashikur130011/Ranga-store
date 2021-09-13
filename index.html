@@ -15,15 +15,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 
-<body >
+<body class="background">
   <header>
-    <section class="text-center">
+    <section class="text-center mt-2">
       <div class="icon">
         <img src="images/icon.jpg" width="100px" alt="" srcset="">
       </div>
       <div>
-        <h1 class="text-danger">
-          Ping <span class="text-dark">Duo</span> Duo
+        <h1 class="text-dark">
+          Ping <span class="text-danger">Duo</span> Duo<span class="text-danger"> (平多多)</span>
         </h1>
       </div>
     </section>
@@ -36,22 +36,23 @@
         </button>
       </div>
     </div> -->
-    <div class="input-group my-3 w-50 mx-auto">
-      <input id="input-field" type="text" class="form-control" placeholder="search item by name..." aria-label="Recipient's username" aria-describedby="button-addon2">
-      <button class="btn btn-outline-success" type="button" id="search-btn" onclick="loadProducts()">Search</button>
+    <div class="bg-dark w-50 mx-auto p-3 rounded-3">
+      <div class="input-group my-3 border border-danger rounded-3">
+        <input id="input-field" type="text" class="form-control" placeholder="search item by name..." aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-danger text-white" type="button" id="search-btn" onclick="loadProducts()">Search</button>
+      </div>
     </div>
   </header>
-  <main class="main bg-light rounded-3">
+  <main class="main">
     
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
-        <div id="all-products" class="">
-          <h1></h1>
+        <div id="all-products" class="mt-3 gap-2">
         </div>
       </div>
-      <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
-        <div class="cart bg-success" id="my-cart">
-          <table class="table text-warning">
+      <div class="col-md-3 col-lg-3 col-sm-5">
+        <div class="cart" id="my-cart">
+          <table class="table text-danger">
             <thead>
               <h1 class="text-center">My-Cart</h1>
               <tr>
@@ -63,25 +64,25 @@
             </thead>
             <tbody>
               <tr>
-                <th>Total Added-Products:</th>
+                <th class="text-dark">Total Added-Products:</th>
                 <td><span id="total-Products">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
-                <th>Price:</th>
+                <th class="text-dark">Price:</th>
                 <td>$ <span id="price">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
-                <th>Delivery-Charge:</th>
+                <th class="text-dark">Delivery-Charge:</th>
                 <td>$ <span id="delivery-charge">20</span></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
-                <th>Total-Tax:</th>
+                <th class="text-dark">Total-Tax:</th>
                 <td>$ <span id="total-tax">0</span></td>
                 <td></td>
                 <td></td>
@@ -94,14 +95,14 @@
             </tbody>
           </table>
           <div class="parces text-center">
-            <button class="btn btn-primary text-center">Buy Now</button>
+            <button class="btn btn-success text-center">Buy Now</button>
           </div>
         </div>
       </div>
     </div>
   </main>
   <footer class="text-center text-white bg-success mt-3">
-    @2021 || Updated By <span class="text-warning">Ashikur Rahman</span>
+    @2021 || Updated By <span class="text-warning fw-bolder">Ashikur Rahman</span>
   </footer>
 
   <!-- add javascript  file  -->

@@ -15,11 +15,11 @@ const showProducts = (products) => {
       <div>
     <img class="product-image" src=${image}></img>
       </div>
-      <h3 class="text-danger">${product.title.slice(0, 18)}</h3>
-      <p>Category: ${product.category}</p>
-      <h2>Price: $ ${product.price}</h2>
-      <h3 class="text-warning">Rating: ${product.rating.rate}</h3>
-      <p>Rating Count: ${product.rating.count}</p>
+      <h3 class="text-danger fw-bold">${product.title.slice(0, 17)}</h3>
+      <p class="fw-bold">Category: ${product.category}</p>
+      <h2 class="text-danger">Price: $ ${product.price}</h2>
+      <h3>Rating: ${product.rating.rate}</h3>
+      <p class="fw-bold">Rating Count: ${product.rating.count}</p>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
       `;
@@ -77,6 +77,6 @@ const updateTotal = () => {
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
-  document.getElementById("total").innerText = grandTotal;
+  document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
 loadProducts();
