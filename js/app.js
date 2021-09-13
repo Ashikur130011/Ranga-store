@@ -18,8 +18,8 @@ const showProducts = (products) => {
       <h3 class="text-danger fw-bold">${product.title.slice(0, 17)}</h3>
       <p class="fw-bold">Category: ${product.category}</p>
       <h2 class="text-danger">Price: $ ${product.price}</h2>
-      <h3>Rating: ${product.rating.rate}</h3>
-      <p class="fw-bold">Rating Count: ${product.rating.count}</p>
+      <h3 class="text-success">Rate: ${product.rating.rate}</h3>
+      <p class="fw-bold">Average: ${product.rating.count}</p>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
       `;
