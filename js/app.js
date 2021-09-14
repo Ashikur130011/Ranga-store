@@ -233,10 +233,10 @@ const showProducts = (products) => {
       <div>
     <img class="product-image" src=${image}></img>
       </div>
-      <h3 class="text-danger fw-bold">${product.title.slice(0, 17)}</h3>
+      <h3 class="text-dark fw-bold">${product.title.slice(0, 17)}</h3>
       <p class="fw-bold">Category: ${product.category}</p>
       <h2 class="text-danger">Price: $ ${product.price}</h2>
-      <h3 class="text-success">Rate: ${product.rating.rate}</h3>
+      <h3 class="text-success">Rating: ${product.rating.rate}</h3>
       <p class="fw-bold">Rated by ${product.rating.count} persion</p>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
